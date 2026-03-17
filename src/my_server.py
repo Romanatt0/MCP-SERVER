@@ -1,5 +1,5 @@
 import asyncio
-from os import name, sync
+
 
 from fastmcp import FastMCP
 import requests
@@ -38,3 +38,4 @@ def test() -> str:
 # 3. Execute o servidor
 if __name__ == "__main__":
     mcp.run(transport="http", port=8000)
+    
