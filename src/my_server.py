@@ -1,6 +1,3 @@
-import asyncio
-
-
 from fastmcp import FastMCP
 import requests
 from models.model import Forecast
