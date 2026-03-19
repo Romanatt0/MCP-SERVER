@@ -8,7 +8,10 @@ from models.model import Forecast
 mcp = FastMCP("MeuServidorMCP")     
 print(f"Servidor MCP '{mcp.name}' inicializado.")
 
-@mcp.tool()
+@mcp.tool(
+        name="previsao_tempo_joinville",
+        description="Retorna a previsão do tempo atual para uma cidade. Use esta ferramenta sempre que o usuário perguntar sobre clima, temperatura, chuva ou tempo em Joinville SC."
+)
 def previsao_tempo_joinville() -> str:
     """
     Ferramenta que obtém a previsão do tempo atual para Joinville.
