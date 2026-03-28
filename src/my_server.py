@@ -27,15 +27,7 @@ def previsao_tempo_joinville() -> str:
     except requests.RequestException as e:
         return f"Erro ao obter previsão do tempo: {str(e)}"
     
-@mcp.tool()
-def test() -> str:
-    """
-    Ferramenta para teste.
-    """
-    return "Teste realizado com sucesso!"
 
-
-# 3. Execute o servidor
 if __name__ == "__main__":
     mcp.run(transport="http", port=8000)
     
